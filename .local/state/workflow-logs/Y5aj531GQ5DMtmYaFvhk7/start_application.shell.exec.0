@@ -1,0 +1,30 @@
+
+> free-games-notifier@1.0.0 build:start
+> npm run build && npm run start
+
+[1G[0K
+> free-games-notifier@1.0.0 build
+> tsc
+
+[1G[0K[1G[0K⠙[1G[0K
+> free-games-notifier@1.0.0 start
+> node dist/app.js
+
+[1G[0K[1m[32mWelcome to the Free Game Notifier![39m[22m
+[33m=================================[39m
+Loading configuration...
+[32mConfiguration loaded successfully![39m
+[33m=================================[39m
+Initialized platform: Steam
+Initialized platform: EpicGames
+Initialized platform: GOG
+Initialized notifier: Ntfy
+Scheduled notifier for Steam with 3600 interval and undefined cron interval
+Scheduled notifier for Epic Games with 3600 interval and undefined cron interval
+Scheduled notifier for GOG with 3600 interval and undefined cron interval
+Status of Steam: [32mrunning[39m
+Status of Epic Games: [32mrunning[39m
+Status of GOG: [32mrunning[39m
+[36mAPI server running on port 3000[39m
+[36m  GET /health[39m
+[36m  GET /api/free-games[39m

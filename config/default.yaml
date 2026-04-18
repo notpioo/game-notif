@@ -1,0 +1,38 @@
+# Main configuration
+mainConfiguration:
+  platforms:
+    - Steam
+    - EpicGames
+    - GOG
+  notificationChannels:
+    - Ntfy
+
+# Configuration settings
+settings:
+  # Notifications specific settings
+  channelSettings:
+    Ntfy:
+      topic: free-games
+    Discord:
+      webhookUrl: https://discord.com/api/webhooks/...
+    WhatsApp:
+      phoneNumber: "628123456789"
+      apiKey: "YOUR_CALLMEBOT_API_KEY"
+
+  # Platform specific settings
+  platformSettings:
+    Steam:
+      types: [games, dlcs]
+      schedule:
+        interval: 3600
+    EpicGames:
+      schedule:
+        interval: 3600
+    GOG:
+      types: [games]
+      schedule:
+        interval: 3600
+    Mocked:
+      amountOfGames: 1
+      schedule:
+        interval: 10
